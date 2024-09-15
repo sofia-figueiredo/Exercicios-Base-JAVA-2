@@ -1,0 +1,25 @@
+Peça ao usuário para inserir dois números inteiros. Compare os números e imprima uma mensagem indicando se são iguais, diferentes, o primeiro é maior ou o segundo é maior.
+
+import java.util.Scanner;
+
+public class Inteiros {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+
+		System.out.println("Digite um número inteiro: ");
+        int resposta1 = leitura.nextInt();
+		System.out.println("Digite outro número inteiro: ");
+        int resposta2 = leitura.nextInt();
+
+        if (resposta1 > resposta2) {
+        	System.out.println("Os números são diferentes");
+        	System.out.println("O número " + resposta1 + " é maior que o número " + resposta2 + ".");
+        } else if (resposta2 > resposta1){
+        	System.out.println("Os números são diferentes");
+            System.out.println("O número " + resposta1 + " é menor que o número " + resposta2 + ".");
+        } else {
+        	System.out.println("Os números são iguais!");
+        }
+	}
+}
