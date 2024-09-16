@@ -1,0 +1,20 @@
+Crie um programa que solicite ao usuário um número e exiba a tabuada desse número de 1 a 10.
+
+import java.util.Scanner;
+
+public class Tabuada {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+
+		System.out.println("Digite um número: ");
+        int numeroEscolhido = leitura.nextInt();
+        
+        System.out.println("Tabuada do " + numeroEscolhido + ":");
+        
+        for (int numeroMultiplicado = 1; numeroMultiplicado <= 10; numeroMultiplicado ++) {
+        	int tabuadaDoNumero = (numeroMultiplicado * numeroEscolhido);
+        	System.out.println(numeroEscolhido + "x" + numeroMultiplicado + " = " + tabuadaDoNumero);
+        }
+	}
+}
