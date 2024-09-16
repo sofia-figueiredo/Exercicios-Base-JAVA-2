@@ -1,0 +1,34 @@
+Crie um menu que oferece duas opções ao usuário: "1. Calcular área do quadrado" e "2. Calcular área do círculo". Solicite a escolha do usuário e realize o cálculo da área com base na opção selecionada.
+
+import java.util.Scanner;
+
+public class Areas {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+		
+        System.out.println("A área de qual forma você quer calcular? (Digite o número)");
+        System.out.println("1. Calcular área do quadrado");
+        System.out.println("2. Calcular área do círculo");
+        int forma = leitura.nextInt();
+
+        if (forma == 1){
+            System.out.println("Digite o valor dos lados em cm: ");
+
+            double lado = leitura.nextDouble();
+            double resultado = lado * lado;
+
+            System.out.println("A área do quadrado é igual a " + resultado + " cm².");
+            
+        } else if (forma == 2) {
+            System.out.println("Digite o valor do raio em cm: ");
+
+            double raio = leitura.nextDouble();
+            double resultado = 3.14 * (raio * raio);
+
+            System.out.println("A área do círculo é igual a " + resultado + " cm².");
+        } else {
+            System.out.println("Opção inválida!");
+        }
+	}
+}
