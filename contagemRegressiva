@@ -1,0 +1,17 @@
+Contagem regressiva
+
+import java.util.Scanner;
+
+public class ContagemRegressiva {
+	
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+		
+        System.out.println("Escolha um número para iniciar a contagem regressiva: ");
+        int numContagem = leitura.nextInt();
+        
+        for (int contagem = numContagem; contagem >= 0; contagem --) {
+    			System.out.println(contagem);
+        }
+	}
+}
