@@ -1,0 +1,19 @@
+Área do triângulo
+
+import java.util.Scanner;
+
+public class AreaTriangulo {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+
+		System.out.println("Insira o valor da base do triângulo em cm: ");
+        double base = leitura.nextDouble();
+        System.out.println("Insira o valor da altura do triângulo em cm: ");
+        double altura = leitura.nextDouble();
+        
+        double area = (base * altura) / 2;
+        
+        System.out.println("A base do triângulo é de " + base + "cm" + " e a altura é de " + altura + ", logo, a área é igual a " + area + "cm².");
+	}
+}
